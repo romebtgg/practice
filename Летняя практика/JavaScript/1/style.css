@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 80px;
+    margin-right: 10px;
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #b3b4b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #909290;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin-top: 20px;
+    border: 1px solid #999;
+}

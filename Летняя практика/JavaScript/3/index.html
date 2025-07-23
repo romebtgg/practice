@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтр товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Фильтр товаров</h1>
+        
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="minPrice">Цена от:</label>
+                <input type="number" id="minPrice" min="0" placeholder="0">
+            </div>
+            
+            <div class="filter-group">
+                <label for="maxPrice">до:</label>
+                <input type="number" id="maxPrice" min="0" placeholder="0">
+            </div>
+            
+            <button id="refreshBtn">Обновить</button>
+        </div>
+        
+        <div id="loading" class="loading">Загрузка данных...</div>
+        <div id="noData" class="no-data">Нет данных, попадающих под условие фильтра</div>
+        
+        <table id="productsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                    <th>Количество</th>
+                    <th>Цена за единицу</th>
+                    <th>Сумма</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
